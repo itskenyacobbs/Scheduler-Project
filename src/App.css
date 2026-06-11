@@ -1,23 +1,57 @@
 .header {
   border: solid blue;
-  padding: 100px;
+  border-radius: 25px;
+  margin: auto;
+  text-align: justify;
+  padding: 50px;
+  font-size: 50px;
+  background-color: blue;
+  color: white
 }
 
 .input-container {
   display: flex;
-  justify-content: space-evenly;
-  border: solid purple;
-  padding: 30px;
-  margin: 5px;
+  justify-content: space-between;
+  align-items: center;
+  border: solid gray;
+  padding: 50px 50px 50px 50px;
+  margin: auto;
+  border-radius: 25px;
+  background-color: lightgrey;
 }
 
-.calender {
-  margin: 10px;
-  padding: 10px;
+.container-title {
+  /* display: flex;
+  align-items: flex-start; */
+  position: static;
+  border: solid red;
+  padding: 50px 50px 50px 50px;
+  font-size: 35px;
+  color: blue;
+  border-radius: 25px;
+
+  
+}
+
+.input-title {
+  display: flex;
+  justify-content: flex-end;
+  border: solid black;
+  font-size: 30px;
+
 }
 
 .input {
-  padding: 2px;
+  /* padding: 1px; */
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.button-container {
+  display: flex;
+  /* justify-content: center; */
+  align-content: center
+
 }
 
 .add-class {
@@ -27,8 +61,7 @@
   border: none;
   text-align: center;
   font-size: 16px;
-  border-radius: 35px;
-
+  border-radius: 15px;
 
 }
 

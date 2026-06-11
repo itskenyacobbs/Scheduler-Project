@@ -1,6 +1,6 @@
 function Header() {
     return (
-        <h1 className="header">Schedule Builder</h1>
+        <p className="header">College Schedule Builder</p>
     )
 }
 

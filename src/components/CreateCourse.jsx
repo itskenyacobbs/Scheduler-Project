@@ -9,35 +9,36 @@ function Create (props) {
    
    //ok so I was super stuck and this i did get from claude
    function handleSubmit() {
-    //object created here, spread operator online 23
+    //This creates the object of the class schedule, spread operator online 
     const newClass = {
         name: name,
         day: day, 
         start: start,
         end: end,
     }
-    //and here I called my handle submit
+    //this invokes the function
     props.addClass(newClass)
    }
-
-
     return (
         <div className="input-container">
-            <p>Course name</p>
+            <div className="container-title">Add a course</div>
+            <p className ="input-title">Course name</p>
             <input onChange={(e) => setName(e.target.value)} className="input">
             </input>
-            <p>Day</p>
+            <p className="input-title">Day</p>
             <input onChange={(e) => setDay(e.target.value)} className="input">
             </input>
-            <p>Start</p>
+            <p className="input-title">Start</p>
             <input onChange={(e) => setStart(e.target.value)}className="input">
             </input>
-            <p>End</p>
+            <p className="input-title">End</p>
             <input onChange={(e) => setEnd(e.target.value)}className="input">
             </input>
+            <div className="button-container">
             <button onClick={() => handleSubmit()} className="add-class">
                 Add Class
             </button>
+            </div>
         </div>
     )
 }
