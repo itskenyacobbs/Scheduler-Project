@@ -21,8 +21,14 @@
 }
 
 .add-class {
-  color: blue;
+  color: white;
   padding: 5px;
+  background-color: blue;
+  border: none;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 35px;
+
 
 }
 
@@ -34,13 +40,23 @@
 
 .course-title{
   border: solid green;
-  padding: 20px;
+  padding: 40px;
+  font-size: 25px;
   margin: 2px;
 }
 
-.course-description {
+.course-date{
   border: solid purple;
+  padding: 20px;
+  font-size: 18px;
+  margin: 2px;
 }
+
+/* .course-time{
+  border: solid blue;
+  padding: 20px;
+  font 
+} */
 /* .hero {
   position: relative;
 

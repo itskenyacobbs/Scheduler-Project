@@ -5,13 +5,18 @@ import Create from './components/CreateCourse'
 import Courses from './components/Courses'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [classes, setClasses] = useState([])
+   
+   function addClass(newClass) {
+    //this spread operator is here in order to describe the properites in the object we created
+    setClasses([...classes, newClass])
+   }
 
   return (
     <>
       <Header />
-      <Create />
-      <Courses />
+      <Create  addClass={addClass} />
+      <Courses classes = {classes} />
     </>
   )
 }
