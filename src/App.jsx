@@ -8,7 +8,7 @@ function App() {
   const [classes, setClasses] = useState([])
    
    function addClass(newClass) {
-    //this spread operator is here in order to describe the properites in the object we created
+    //this spread operator is here in order to describe the properites in the object we created in create component
     setClasses([...classes, newClass])
    }
 

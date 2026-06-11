@@ -42,13 +42,41 @@ function Create (props) {
                 <option> Sunday </option>
             </select>
             <label className="input-title">Start</label>
-            <input onChange={(e) => setStart(e.target.value)}className="input">
-            </input>
+            <select onChange={(e) => setStart(e.target.value)}className="input">
+                    <option></option>
+                <option> 9:00am </option>
+                <option> 10:00am </option>
+                <option> 11:00am </option>
+                <option> 12:00pm </option>
+                <option> 1:00pm</option>
+                <option> 2:00pm</option>
+                <option> 3:00pm </option>
+                <option> 4:00pm </option>
+                <option> 5:00pm </option>
+                <option> 6:00pm </option>
+                <option> 7:00pm </option>
+                <option> 8:00pm</option>
+                <option> 9:00pm</option>
+            </select>
             <label className="input-title">End</label>
-            <input onChange={(e) => setEnd(e.target.value)}className="input">
-            </input>
+            <select onChange={(e) => setEnd(e.target.value)}className="input">
+                   <option></option>
+                <option> 9:00am </option>
+                <option> 10:00am </option>
+                <option> 11:00am </option>
+                <option> 12:00pm </option>
+                <option> 1:00pm</option>
+                <option> 2:00pm</option>
+                <option> 3:00pm </option>
+                <option> 4:00pm </option>
+                <option> 5:00pm </option>
+                <option> 6:00pm </option>
+                <option> 7:00pm </option>
+                <option> 8:00pm</option>
+                <option> 9:00pm</option>
+            </select>
             <div className="button-container">
-            {/*Here i had to pass the event hanto access the prevent default method I referenced in my handle submit function */}
+            {/*Here i had to pass the event object access the prevent default method I referenced in my handle submit function */}
             <button onClick={(e) => handleSubmit(e)} className="add-class">
                 Add Class
             </button>
